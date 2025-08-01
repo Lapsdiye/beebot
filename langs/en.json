@@ -1,0 +1,109 @@
+{
+    "commands": {
+        "guess": {
+            "description": "Start music guessing game"
+        },
+        "point": {
+            "description": "View your points"
+        },
+        "channel": {
+            "description": "Set channel for music guessing game",
+            "option": {
+                "description": "Channel where the game will be played"
+            }
+        },
+        "disable": {
+            "description": "Disable music guessing game"
+        },
+        "leaderboard": {
+            "description": "View leaderboard"
+        },
+        "leaderboard_scope": {
+            "description": "Leaderboard scope (global or server)"
+        }
+    },
+    "game": {
+        "title": "🎵 Music Guessing Game",
+        "description": "**{duration} seconds** listen to the song and write the song name in chat!\n\n**Rules:**\n• Correct guess: +3 points\n• Wrong guess: 2 attempts available\n• Can't guess: -2 points\n\n💬 **Write the song name in this channel!**",
+        "correct": {
+            "title": "🎉 Congratulations!",
+            "description": "> <@{userId}> guessed correctly!\n\nSong: **{songName}** - **{artist}**\n+3 points earned!"
+        },
+        "wrong": {
+            "title": "❌ Wrong!",
+            "description": "> <@{userId}> wrong guess!\n\nYou have one more attempt! ({remainingAttempts} attempts left)"
+        },
+        "over": {
+            "title": "😔 Game Over",
+            "description": "> <@{userId}> couldn't guess!\n\nCorrect answer: **{songName}** - **{artist}**\n-2 points lost!"
+        },
+        "choose_genre": "Which music genre would you like to guess?",
+        "select_genre": "Select music genre",
+        "genre_suffix": "music",
+        "select_difficulty": "Select difficulty level:",
+        "difficulty_easy": "Easy (10 seconds)",
+        "difficulty_medium": "Medium (5 seconds)",
+        "difficulty_hard": "Hard (3 seconds)",
+        "listen_song": "🎧 Listen to the full song"
+    },
+    "footer": {
+        "playing": "{username} is playing",
+        "correct": "{username} guessed correctly",
+        "wrong": "{username} guessed wrong",
+        "failed": "{username} couldn't guess"
+    },
+    "error": {
+        "no_genres": "No music genres added yet!",
+        "no_songs": "No songs found in this genre!",
+        "audio_failed": "Error processing song! Please try again.",
+        "game_start": "Error starting game!",
+        "general": "An error occurred!"
+    },
+    "channel": {
+        "set": {
+            "title": "✅ Channel Set",
+            "description": "Music guessing game can now only be played in {channel}."
+        },
+        "disable": {
+            "title": "❌ Game Disabled",
+            "description": "Music guessing game has been disabled on this server."
+        },
+        "wrong_type": "Please select a text channel!",
+        "game_disabled": "Music guessing game is disabled on this server. An authorized person can enable it with `/channel` command.",
+        "wrong_channel": "Music guessing game can only be played in {channel}."
+    },
+    "points": {
+        "title": "📊 Your Points",
+        "description": "Total points: **{score}**"
+    },
+    "loading": {
+        "preparing": "Preparing song, please wait... (This process may take up to 30 seconds)"
+    },
+    "setup": {
+        "footer": {
+            "set": "Set by {username}",
+            "disabled": "Disabled by {username}"
+        }
+    },
+    "leaderboard": {
+        "title": {
+            "global": "🌍 Global Leaderboard",
+            "server": "🏠 Server Leaderboard"
+        },
+        "select_time": "Select time period",
+        "select_period": "Please select a time period to view the leaderboard.",
+        "time": {
+            "hourly": "Last Hour",
+            "daily": "Last 24 Hours",
+            "weekly": "Last Week",
+            "monthly": "Last Month",
+            "yearly": "Last Year",
+            "alltime": "All Time"
+        },
+        "points": "pts",
+        "games": "games",
+        "winrate": "win rate",
+        "no_data": "No data available for this period.",
+        "unknown_user": "Unknown User"
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "commands": {
+        "guess": {
+            "description": "音楽推測ゲームを開始"
+        },
+        "point": {
+            "description": "ポイントを表示"
+        },
+        "channel": {
+            "description": "音楽推測ゲームのチャンネル設定",
+            "option": {
+                "description": "ゲームが行われるチャンネル"
+            }
+        },
+        "disable": {
+            "description": "音楽推測ゲームを無効化"
+        }
+    },
+    "game": {
+        "title": "🎵 音楽推測ゲーム",
+        "description": "**{duration}秒**音楽を聞いて、チャットに曲名を書いてください！\n\n**ルール:**\n• 正解: +3ポイント\n• 不正解: 2回の機会\n• 分からない場合: -2ポイント\n\n💬 **このチャンネルに曲名を書いてください！**",
+        "correct": {
+            "title": "🎉 おめでとうございます！",
+            "description": "> <@{userId}>さんが正解しました！\n\n曲: **{songName}** - **{artist}**\n+3ポイント獲得！"
+        },
+        "wrong": {
+            "title": "❌ 間違いです！",
+            "description": "> <@{userId}>さんが間違えました！\n\nもう一度チャンスがあります！ (残り{remainingAttempts}回)"
+        },
+        "over": {
+            "title": "😔 ゲーム終了",
+            "description": "> <@{userId}>さんが当てられませんでした！\n\n正解: **{songName}** - **{artist}**\n-2ポイント減点！"
+        },
+        "choose_genre": "どの音楽ジャンルを推測しますか？",
+        "select_genre": "音楽ジャンルを選択",
+        "genre_suffix": "音楽",
+        "select_difficulty": "難易度を選択してください:",
+        "difficulty_easy": "簡単 (10秒)",
+        "difficulty_medium": "普通 (5秒)",
+        "difficulty_hard": "難しい (3秒)",
+        "listen_song": "🎧 フル曲を聴く"
+    },
+    "footer": {
+        "playing": "{username}さんがプレイ中",
+        "correct": "{username}さんが正解",
+        "wrong": "{username}さんが間違い",
+        "failed": "{username}さんが失敗"
+    },
+    "error": {
+        "no_genres": "まだ音楽ジャンルが追加されていません！",
+        "no_songs": "このジャンルに曲がありません！",
+        "audio_failed": "曲の処理中にエラーが発生しました！もう一度お試しください。",
+        "game_start": "ゲーム開始中にエラーが発生しました！",
+        "general": "エラーが発生しました！"
+    },
+    "channel": {
+        "set": {
+            "title": "✅ チャンネル設定完了",
+            "description": "音楽推測ゲームは{channel}でのみプレイできるようになりました。"
+        },
+        "disable": {
+            "title": "❌ ゲーム無効化",
+            "description": "このサーバーで音楽推測ゲームが無効化されました。"
+        },
+        "wrong_type": "テキストチャンネルを選択してください！",
+        "game_disabled": "このサーバーで音楽推測ゲームが無効化されています。権限のある人が`/channel`コマンドで有効化できます。",
+        "wrong_channel": "音楽推測ゲームは{channel}でのみプレイできます。"
+    },
+    "points": {
+        "title": "📊 ポイント",
+        "description": "合計ポイント: **{score}**"
+    },
+    "loading": {
+        "preparing": "曲を準備中です、お待ちください... (最大30秒かかります)"
+    },
+    "setup": {
+        "footer": {
+            "set": "{username}さんによって設定されました",
+            "disabled": "{username}さんによって無効化されました"
+        }
+    }
+}

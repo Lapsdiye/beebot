@@ -1,0 +1,82 @@
+{
+    "commands": {
+        "guess": {
+            "description": "Müzik tahmin oyunu başlat"
+        },
+        "point": {
+            "description": "Puanınızı görüntüleyin"
+        },
+        "channel": {
+            "description": "Müzik tahmin oyunu için kanal ayarla",
+            "option": {
+                "description": "Oyunun oynanacağı kanal"
+            }
+        },
+        "disable": {
+            "description": "Müzik tahmin oyununu devre dışı bırak"
+        }
+    },
+    "game": {
+        "title": "🎵 Müzik Tahmin Oyunu",
+        "description": "**{duration} saniye** şarkı dinleyin ve sohbete şarkının adını yazın!\n\n**Kurallar:**\n• Doğru tahmin: +3 puan\n• Yanlış tahmin: 2 deneme hakkınız var\n• Bilemezseniz: -2 puan\n\n💬 **Şarkının adını bu kanala yazın!**",
+        "correct": {
+            "title": "🎉 Tebrikler!",
+            "description": "> <@{userId}> doğru bildi!\n\nŞarkı: **{songName}** - **{artist}**\n+3 puan kazandınız!"
+        },
+        "wrong": {
+            "title": "❌ Yanlış!",
+            "description": "> <@{userId}> yanlış tahmin!\n\nBir deneme hakkınız daha var! ({remainingAttempts} deneme kaldı)"
+        },
+        "over": {
+            "title": "😔 Oyun Bitti",
+            "description": "> <@{userId}> bilemedi!\n\nDoğru cevap: **{songName}** - **{artist}**\n-2 puan kaybettiniz!"
+        },
+        "choose_genre": "Hangi müzik türünde tahmin yapmak istiyorsunuz?",
+        "select_genre": "Müzik türünü seçin",
+        "genre_suffix": "müziği",
+        "select_difficulty": "Zorluk seviyesini seçin:",
+        "difficulty_easy": "Kolay (10 saniye)",
+        "difficulty_medium": "Orta (5 saniye)",
+        "difficulty_hard": "Zor (3 saniye)",
+        "listen_song": "🎧 Şarkının tamamını dinle"
+    },
+    "footer": {
+        "playing": "{username} oynuyor",
+        "correct": "{username} doğru bildi",
+        "wrong": "{username} yanlış tahmin",
+        "failed": "{username} bilemedi"
+    },
+    "error": {
+        "no_genres": "Henüz müzik türü eklenmemiş!",
+        "no_songs": "Bu türde henüz şarkı bulunmuyor!",
+        "audio_failed": "Şarkı işlenirken hata oluştu! Lütfen tekrar deneyin.",
+        "game_start": "Oyun başlatılırken hata oluştu!",
+        "general": "Bir hata oluştu!"
+    },
+    "channel": {
+        "set": {
+            "title": "✅ Kanal Ayarlandı",
+            "description": "Müzik tahmin oyunu artık sadece {channel} kanalında oynanabilir."
+        },
+        "disable": {
+            "title": "❌ Oyun Devre Dışı",
+            "description": "Müzik tahmin oyunu bu sunucuda devre dışı bırakıldı."
+        },
+        "wrong_type": "Lütfen bir text kanalı seçin!",
+        "game_disabled": "Bu sunucuda müzik tahmin oyunu devre dışı. Yetkili bir kişi `/channel` komutu ile etkinleştirebilir.",
+        "wrong_channel": "Müzik tahmin oyunu sadece {channel} kanalında oynanabilir."
+    },
+    "points": {
+        "title": "📊 Puanınız",
+        "description": "Toplam puanınız: **{score}**"
+    },
+    "loading": {
+        "preparing": "Şarkı hazırlanıyor, lütfen bekleyin... (Bu işlem 30 saniye kadar sürebilir)"
+    },
+    "setup": {
+        "footer": {
+            "set": "{username} tarafından ayarlandı",
+            "disabled": "{username} tarafından devre dışı bırakıldı"
+        }
+    }
+}
