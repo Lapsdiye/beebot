@@ -1,4 +1,4 @@
-# 🎵 BeeBoting - Discord Müzik Tahmin Botu
+# 🎵 BeeBot - Discord Müzik Tahmin Botu
 
 BeeBoting, Discord sunucularınızda eğlenceli müzik tahmin oyunları düzenleyebileceğiniz bir bot'tur. YouTube'dan müzik çalarak kullanıcıların şarkı adını tahmin etmesini sağlar ve puan sistemi ile rekabetçi bir ortam yaratır.
 
